@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PokeController">
+   <children>
+      <BorderPane layoutX="6.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="200.0" prefWidth="435.0" styleClass="right-bar" stylesheets="@../values/style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="110.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="49.0" prefWidth="205.0" text="POKEMON" textFill="#878787">
+                           <font>
+                              <Font name="Cambria Bold" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label prefWidth="83.0" text="DEX" textFill="#878787">
+                           <font>
+                              <Font name="Cambria" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0" stylesheets="@../values/style.css" VBox.vgrow="NEVER">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField fx:id="searchBar" prefHeight="40.0" prefWidth="235.0" promptText="Search your Pokemon" styleClass="transparent" stylesheets="@../values/style.css">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Button mnemonicParsing="false" onAction="#actionSearch" prefHeight="40.0" prefWidth="66.0" styleClass="search-button" stylesheets="@../values/style.css" text="Search" textFill="WHITE" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </HBox>
+                  <Pane prefHeight="57.0" prefWidth="435.0" VBox.vgrow="ALWAYS" />
+                  <VBox fx:id="chosenPokeCard" alignment="CENTER" prefHeight="535.0" prefWidth="100.0" stylesheets="@../values/style.css">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox prefHeight="60.0" prefWidth="335.0">
+                           <children>
+                              <Label fx:id="pokeNameLable" prefHeight="48.0" prefWidth="276.0" text="Pikachu" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="36.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="imgType" fitHeight="50.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/types/electric.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" top="30.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets right="15.0" />
+                           </padding>
+                        </HBox>
+                        <ImageView fx:id="pokeImg" fitHeight="223.0" fitWidth="233.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/monsters/pikachu.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="-15.0" top="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="20.0" top="20.0" />
+                           </VBox.margin>
+                           <children>
+                              <Separator prefHeight="0.0" prefWidth="118.0" />
+                              <Separator prefHeight="0.0" prefWidth="118.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="27.0" prefWidth="335.0">
+                           <VBox.margin>
+                              <Insets top="-30.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="89.0" text="S K I L L S" textFill="WHITE" />
+                           </children>
+                        </HBox>
+                        <VBox alignment="CENTER" prefHeight="118.0" prefWidth="343.0">
+                           <children>
+                              <Label fx:id="skill1" alignment="CENTER" prefHeight="29.0" prefWidth="281.0" styleClass="rounded-card" stylesheets="@../values/style.css" text="-" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria Bold" size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="40.0" right="40.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="skill2" alignment="CENTER" prefHeight="29.0" prefWidth="281.0" styleClass="rounded-card" stylesheets="@../values/style.css" text="-" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria Bold" size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="40.0" right="40.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="skill3" alignment="CENTER" prefHeight="29.0" prefWidth="281.0" styleClass="rounded-card" stylesheets="@../values/style.css" text="-" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria Bold" size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="40.0" right="40.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="314.0">
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label fx:id="hp" alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="81.0" stylesheets="@../values/style.css" text="HP : ">
+                                 <HBox.margin>
+                                    <Insets right="15.0" />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="rounded-HP" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </Label>
+                              <Label fx:id="atk" alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="81.0" stylesheets="@../values/style.css" text="ATK : ">
+                                 <HBox.margin>
+                                    <Insets right="15.0" />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="rounded-ATK" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </Label>
+                              <Label fx:id="def" alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="81.0" stylesheets="@../values/style.css" text="DEF : ">
+                                 <styleClass>
+                                    <String fx:value="rounded-DEF" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="chosen-poke-card" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <padding>
+                        <Insets top="-15.0" />
+                     </padding>
+                  </VBox>
+                  <Pane prefHeight="57.0" prefWidth="435.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="53.0" prefWidth="840.0">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <Pane prefHeight="65.0" prefWidth="393.0" HBox.hgrow="ALWAYS" />
+                        <Label prefHeight="62.0" prefWidth="217.0" text="POKEMON INFO SUPPORT" textFill="#878787">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="50.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/pokelogo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="99.0" prefWidth="840.0">
+                     <children>
+                        <Pane prefHeight="99.0" prefWidth="3.0" HBox.hgrow="ALWAYS" />
+                        <Pane prefHeight="99.0" prefWidth="6.0" />
+                        <VBox prefHeight="99.0" prefWidth="83.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="59.0" prefWidth="105.0" stylesheets="@../values/style.css">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#resetView" prefHeight="59.0" prefWidth="80.0" styleClass="rounded-card" stylesheets="@../values/style.css" text="RESET" textFill="#878787">
+                                       <font>
+                                          <Font name="Cambria Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets right="-1.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="rounded-card" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="41.0" prefWidth="279.0" />
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="99.0" prefWidth="26.0" />
+                        <VBox prefHeight="99.0" prefWidth="269.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="63.0" prefWidth="242.0" stylesheets="@../values/style.css">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#filterMonster" prefHeight="59.0" prefWidth="189.0" styleClass="monster-filter-card" stylesheets="@../values/style.css" text="SORT BY MONSTER" textFill="#878787">
+                                       <font>
+                                          <Font name="Cambria Bold" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <ImageView fitHeight="49.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/ic_pikachu.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="monster-filter-card" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="41.0" prefWidth="279.0">
+                                 <children>
+                                    <RadioButton mnemonicParsing="false" text="Name">
+                                       <HBox.margin>
+                                          <Insets right="5.0" />
+                                       </HBox.margin>
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="monstersort" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton mnemonicParsing="false" text="Type" toggleGroup="$monstersort">
+                                       <HBox.margin>
+                                          <Insets right="5.0" />
+                                       </HBox.margin>
+                                    </RadioButton>
+                                    <RadioButton mnemonicParsing="false" text="HP" toggleGroup="$monstersort">
+                                       <HBox.margin>
+                                          <Insets right="5.0" />
+                                       </HBox.margin>
+                                    </RadioButton>
+                                    <RadioButton mnemonicParsing="false" text="ATK" toggleGroup="$monstersort">
+                                       <HBox.margin>
+                                          <Insets right="5.0" />
+                                       </HBox.margin>
+                                    </RadioButton>
+                                    <RadioButton mnemonicParsing="false" text="DEF" toggleGroup="$monstersort">
+                                       <HBox.margin>
+                                          <Insets right="5.0" />
+                                       </HBox.margin>
+                                    </RadioButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="99.0" prefWidth="29.0" />
+                        <VBox prefHeight="99.0" prefWidth="211.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="61.0" prefWidth="189.0" stylesheets="@../values/style.css">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#filterItem" prefHeight="59.0" prefWidth="147.0" styleClass="item-filter-card" stylesheets="@../values/style.css" text="SORT BY ITEM" textFill="#878787">
+                                       <font>
+                                          <Font name="Cambria Bold" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <ImageView fitHeight="49.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/pokeball_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="item-filter-card" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="41.0" prefWidth="279.0">
+                                 <children>
+                                    <RadioButton mnemonicParsing="false" text="Name">
+                                       <HBox.margin>
+                                          <Insets right="5.0" />
+                                       </HBox.margin>
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="itemsort" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton mnemonicParsing="false" text="Rarity" toggleGroup="$itemsort">
+                                       <HBox.margin>
+                                          <Insets right="5.0" />
+                                       </HBox.margin>
+                                    </RadioButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="99.0" prefWidth="29.0" />
+                        <VBox prefHeight="99.0" prefWidth="237.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="61.0" prefWidth="241.0" stylesheets="@../values/style.css">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#filterTrainer" prefHeight="59.0" prefWidth="166.0" styleClass="trainer-filter-card" stylesheets="@../values/style.css" text="SORT BY TRAINER" textFill="#878787">
+                                       <font>
+                                          <Font name="Cambria Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets right="-1.0" />
+                                       </padding>
+                                    </Button>
+                                    <ImageView fitHeight="49.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/dandy_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="trainer-filter-card" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="41.0" prefWidth="279.0" />
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="99.0" prefWidth="1.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ScrollPane fx:id="scroll" prefHeight="570.0" prefWidth="785.0" styleClass="transparent" stylesheets="@../values/style.css">
+                           <content>
+                              <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </content>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

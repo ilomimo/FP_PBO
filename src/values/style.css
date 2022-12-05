@@ -1,0 +1,67 @@
+.search-box{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius: 100;
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.search-button{
+    -fx-background-color: #828282;
+    -fx-background-radius: 30;
+}
+
+.right-bar{
+    -fx-background-color: #D3D3D3;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+
+.chosen-poke-card{
+    -fx-background-color: #A7745B;
+    -fx-background-radius: 30;
+}
+
+
+.rounded-card{
+    -fx-background-color: #D3D3D3;
+    -fx-background-radius: 30;
+}
+
+.rounded-HP{
+    -fx-background-color: #25be3f;
+    -fx-background-radius: 10;
+}
+
+.rounded-ATK{
+    -fx-background-color: #e24848;
+    -fx-background-radius: 10;
+}
+
+.rounded-DEF{
+    -fx-background-color: #25a4be;
+    -fx-background-radius: 10;
+}
+
+.trainer-filter-card{
+    -fx-background-color: #BAEAC3;
+    -fx-background-radius: 30;
+}
+
+.item-filter-card{
+    -fx-background-color: #bad7ea;
+    -fx-background-radius: 30;
+}
+
+.monster-filter-card{
+    -fx-background-color: #eabac4;
+    -fx-background-radius: 30;
+}
+
+.fruit-item{
+    -fx-background-color: #FFFFFF;
+        -fx-background-radius: 30;
+}
