@@ -1,11 +1,11 @@
 
-# Shoot the Monsters!
+# Pokémon Dex!
 
 Final Project Mata Kuliah Pemrograman Berbasis Objek (B)
 
 Dibuat oleh: Clarissa Luna Maheswari - 5025211003
 
 
-# Deskripsi Game
+# Deskripsi: 
 
-Game dengan nama Shoot the Monsters! ini terinspirasi dari sebuah game arkade yakni space invaders. Pada game ini, karakter utama yang akan dikontrol oleh user adalah seorang bocah bernama Tom. Tom harus berhadapan dengan berbagai jenis monster menyeramkan. Tom memiliki tiga nyawa yang tiap nyawanya akan berkurang satu apabila Tom gagal menembakkan peluru pada monster.  Kecepatan monster akan bertambah seiring game berjalan. Permainan akan selesai dengan menampilkan score dan highscore selama game berlangsung. 
+Pokémon Dex adalah sebuah sarana yang dirancang untuk membuat katalog dan memberikan informasi mengenai berbagai spesies Pokémon yang ditampilkan dalam seri video game, anime, dan manga Pokémon. Di dalam video game, setiap player menemui jenis Pokémon yang baru, datanya akan ditambahkan ke dalam sebuah gawai untuk melihat Pokémon yang sudah ditangkap. Pada Pokémon Dex, pengakses dapat melihat berbagai jenis item berupa Monster Pokémon, Item Pokémon, dan Trainer Pokémon. Item-item tersebut dapat dikategorikan dan dicari berdasarkan Nama, Jenis, HP, ATK, dan DEFENSE.
