@@ -1,5 +1,5 @@
 
-# Pokémon Dex!
+# Pokémon Dex
 
 Final Project Mata Kuliah Pemrograman Berbasis Objek (B)
 
