@@ -11,6 +11,51 @@ Pokémon Dex adalah sebuah sarana yang dirancang untuk membuat katalog dan membe
 
 # ASPEK OOP
 
+
+1) Constructor
+Aspek ini sudah banyak digunaknan dalam program, terutama di dalam package Model
+Contohnya pada Class Monster:
+
+public Monster(String label, String name, String bgColor, String imgSrc,
+                   String type, List<String> skills, 
+                   Stat stat) {
+        super(label, name, bgColor, imgSrc);
+        this.type = type;
+        this.skills = skills;
+        this.stat = stat;
+    }
+
+
+2) Overloading
+
+3) Overriding
+
+4) Inheritance
+
+5) Polymorphism
+
+6) ArrayList
+
+7) Exception HAndling
+
+8) GUI Interface
+
+9) Abstract Class
+
+10) Generics
+
+11) Collection
+
+12) Input Output
+
+13) Encapsulation
+
+Sudah banyak digunakan dalam program, terutama di dalma package Model, class-class di dalamnya sudah menerapkan access modifier private serta penambahan getter dan setter.
+
+Contohnya pada class Monster:
+
+3) Inheritance
+
 https://intip.in/PenjelasanAspekOOPLuna
 
 # Demo Aplikasi Youtube:
