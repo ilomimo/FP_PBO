@@ -5,11 +5,11 @@ Final Project Mata Kuliah Pemrograman Berbasis Objek (B)
 Dibuat oleh: Clarissa Luna Maheswari - 5025211003
 
 
-# Deskripsi: 
+# Deskripsi
 
 Pokémon Dex adalah sebuah sarana yang dirancang untuk membuat katalog dan memberikan informasi mengenai berbagai spesies Pokémon yang ditampilkan dalam seri video game, anime, dan manga Pokémon. Di dalam video game, setiap player menemui jenis Pokémon yang baru, datanya akan ditambahkan ke dalam sebuah gawai untuk melihat Pokémon yang sudah ditangkap. Pada Pokémon Dex, pengakses dapat melihat berbagai jenis item berupa Monster Pokémon, Item Pokémon, dan Trainer Pokémon. Item-item tersebut dapat dikategorikan dan dicari berdasarkan Nama, Jenis, HP, ATK, dan DEFENSE untuk Monster Pokémon serta Nama dan Rarity untuk Item Pokémon.
 
-# Demo Aplikasi Youtube:
+# Demo Aplikasi Youtube
 
 https://youtu.be/Fn35R4S5xx4
 
@@ -229,8 +229,16 @@ Contoh:
     }
 ```
 10) GUI Interface
-```
-```
+
+Tampilan awal:
+![image](https://user-images.githubusercontent.com/83297152/207369874-d7e60fc1-894b-47d7-8672-965ee71f5169.png)
+
+Menggunakan fitur sorting:
+![image](https://user-images.githubusercontent.com/83297152/207370469-8d74325f-36dd-4c5e-86be-3e084c6a1baf.png)
+
+Menggunakan fitur searching:
+![image](https://user-images.githubusercontent.com/83297152/207371106-d7a7bf93-5c3b-4c30-ac8b-a54e5bc0caa0.png)
+
 11) Abstract Class
 
 Aspek ini banyak digunakan pada Predicate dan MyListener.
