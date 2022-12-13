@@ -5,25 +5,19 @@
 package Functionality;
 
 /**
- *
+ *Class to do algorithmic operation
+ * has 2 main overloaded methods (Find and collect
+ * And 1 method to do safe casting
  * @author Luna
  */
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
-import model.Monster;
 import model.Pokemon;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+
 
 public class Algorithm {
     
@@ -86,7 +80,7 @@ public class Algorithm {
         return list;
     }
     
-//convert to desired Class    
+//cast to desired Class that extends Pokemon    
     public static <T extends Pokemon> List<T> toDifferentClass(List<Pokemon> pks, Class<T> clazz) {
         List<T> list = new ArrayList<>();
         pks.forEach(p -> list.add(clazz.cast(p)));
@@ -94,4 +88,3 @@ public class Algorithm {
     }
     
 }
-

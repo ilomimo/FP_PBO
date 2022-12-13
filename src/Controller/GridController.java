@@ -4,28 +4,17 @@
  */
 package Controller;
 
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import model.Pokemon;
 /**
  *
  * @author Luna
  */
-
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
-import main.Main;
-import main.MyListener;
-import model.Pokemon;
-
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
-
-public class ItemController {
+public class GridController {
     @FXML
     private Label nameLabel;
 
@@ -52,3 +41,4 @@ public class ItemController {
         img.setImage(image);
     }
 }
+

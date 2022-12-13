@@ -2,13 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Functionality;
-
+package Controller;
+import model.Pokemon;
 /**
- * Predicat efor Algorithm class method
+ *
  * @author Luna
  */
-
-public interface Predicate <T> {
-    public abstract boolean predicate(T args);
+public interface MyListener {
+    public void onClickListener(Pokemon pk);
 }
+
+
+

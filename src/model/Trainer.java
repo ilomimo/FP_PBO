@@ -10,70 +10,16 @@ package model;
  */
 import java.util.List;
 
-public class Monster extends Pokemon {
-    private String type; 
-    private List<String> skills;
-    private Stat stat;
+public class Trainer extends Pokemon {
+    private String description;
 
-    public Monster(String label, String name, String bgColor, String imgSrc,
-                   String type, List<String> skills, 
-                   Stat stat) {
+    public Trainer(String description, String label, String name, String bgColor, String imgSrc) {
         super(label, name, bgColor, imgSrc);
-        this.type = type;
-        this.skills = skills;
-        this.stat = stat;
+        this.description = description;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public List<String> getSkills() {
-        return skills;
-    }
-
-    public Stat getStat() {
-        return stat;
+    public String getDescription() {
+        return description;
     }
     
-    public int getHP() {
-        return getStat().getHP();
-    }
-    
-    public int getATK() {
-        return getStat().getAttack();
-    }
-    
-    public int getDEF() {
-        return getStat().getDeffense();
-    }
-
-    
-    public static class Stat {
-        private int HP;
-        private int attack;
-        private int deffense;
-
-        public Stat(int HP, int attack, int deffense) {
-            this.HP = HP;
-            this.attack = attack;
-            this.deffense = deffense;
-        }
-
-        public int getHP() {
-            return HP;
-        }
-
-        public int getAttack() {
-            return attack;
-        }
-
-        public int getDeffense() {
-            return deffense;
-        }
-        
-        
-        
-    }
-   
 }

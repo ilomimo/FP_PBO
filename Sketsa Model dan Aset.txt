@@ -1,0 +1,11 @@
+Sketsa model:
+--> monster (type, list skill, class stat)
+--> trainer (info)
+--> item (String effect, String rarity)
+
+Aset:
+link dex (item) : https://www.serebii.net/itemdex/
+https://www.thegamer.com/pokemon-series-rarest-items/
+
+link dex (monster) : https://www.serebii.net/pokedex-dp/
+

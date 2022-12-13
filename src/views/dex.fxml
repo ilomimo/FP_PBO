@@ -108,77 +108,10 @@
                               <Insets top="-30.0" />
                            </VBox.margin>
                            <children>
-                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="89.0" text="S K I L L S" textFill="WHITE" />
+                              <Label fx:id="skillordesc" alignment="CENTER" prefHeight="17.0" prefWidth="89.0" text="S K I L L S" textFill="WHITE" />
                            </children>
                         </HBox>
-                        <VBox alignment="CENTER" prefHeight="118.0" prefWidth="343.0">
-                           <children>
-                              <Label fx:id="skill1" alignment="CENTER" prefHeight="29.0" prefWidth="281.0" styleClass="rounded-card" stylesheets="@../values/style.css" text="-" textFill="#878787">
-                                 <font>
-                                    <Font name="Cambria Bold" size="18.0" />
-                                 </font>
-                                 <padding>
-                                    <Insets left="40.0" right="40.0" />
-                                 </padding>
-                                 <VBox.margin>
-                                    <Insets bottom="10.0" top="10.0" />
-                                 </VBox.margin>
-                              </Label>
-                              <Label fx:id="skill2" alignment="CENTER" prefHeight="29.0" prefWidth="281.0" styleClass="rounded-card" stylesheets="@../values/style.css" text="-" textFill="#878787">
-                                 <font>
-                                    <Font name="Cambria Bold" size="18.0" />
-                                 </font>
-                                 <padding>
-                                    <Insets left="40.0" right="40.0" />
-                                 </padding>
-                                 <VBox.margin>
-                                    <Insets bottom="10.0" />
-                                 </VBox.margin>
-                              </Label>
-                              <Label fx:id="skill3" alignment="CENTER" prefHeight="29.0" prefWidth="281.0" styleClass="rounded-card" stylesheets="@../values/style.css" text="-" textFill="#878787">
-                                 <font>
-                                    <Font name="Cambria Bold" size="18.0" />
-                                 </font>
-                                 <padding>
-                                    <Insets left="40.0" right="40.0" />
-                                 </padding>
-                              </Label>
-                           </children>
-                           <VBox.margin>
-                              <Insets />
-                           </VBox.margin>
-                        </VBox>
-                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="314.0">
-                           <VBox.margin>
-                              <Insets bottom="10.0" top="10.0" />
-                           </VBox.margin>
-                           <children>
-                              <Label fx:id="hp" alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="81.0" stylesheets="@../values/style.css" text="HP : ">
-                                 <HBox.margin>
-                                    <Insets right="15.0" />
-                                 </HBox.margin>
-                                 <styleClass>
-                                    <String fx:value="rounded-HP" />
-                                    <String fx:value="shadow" />
-                                 </styleClass>
-                              </Label>
-                              <Label fx:id="atk" alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="81.0" stylesheets="@../values/style.css" text="ATK : ">
-                                 <HBox.margin>
-                                    <Insets right="15.0" />
-                                 </HBox.margin>
-                                 <styleClass>
-                                    <String fx:value="rounded-ATK" />
-                                    <String fx:value="shadow" />
-                                 </styleClass>
-                              </Label>
-                              <Label fx:id="def" alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="81.0" stylesheets="@../values/style.css" text="DEF : ">
-                                 <styleClass>
-                                    <String fx:value="rounded-DEF" />
-                                    <String fx:value="shadow" />
-                                 </styleClass>
-                              </Label>
-                           </children>
-                        </HBox>
+                        <VBox fx:id="holder" alignment="CENTER" prefHeight="185.0" prefWidth="335.0" />
                      </children>
                      <styleClass>
                         <String fx:value="chosen-poke-card" />
