@@ -15,7 +15,7 @@ https://intip.in/PenjelasanAspekOOPLuna
 
 # Demo Aplikasi Youtube:
 
-https://youtu.be/xXJVACot36o
+https://youtu.be/Fn35R4S5xx4
 
 # Terinspirasi dan dikembangkan dari:
 
