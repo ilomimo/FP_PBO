@@ -13,7 +13,7 @@ Pokémon Dex adalah sebuah sarana yang dirancang untuk membuat katalog dan membe
 
 https://youtu.be/Fn35R4S5xx4
 
-# Terinspirasi dan dikembangkan dari:
+# Terinspirasi dan dikembangkan dari
 
 https://www.youtube.com/watch?v=XlAzQ170kzM
 
