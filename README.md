@@ -358,7 +358,3 @@ Contoh lain (terdapat di IOException juga):
         }
     }
 ```
-
-https://intip.in/PenjelasanAspekOOPLuna
-
-
