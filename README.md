@@ -16,3 +16,7 @@ Link Penjelasan : https://intip.in/PenjelasanAspekOOPLuna
 # Demo Aplikasi Youtube:
 
 https://youtu.be/xXJVACot36o
+
+# Terinspirasi dari:
+
+https://www.youtube.com/watch?v=XlAzQ170kzM
