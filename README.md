@@ -11,7 +11,7 @@ Pokémon Dex adalah sebuah sarana yang dirancang untuk membuat katalog dan membe
 
 # File mengandung aspek OOP:
 
-Link Penjelasan lebih lanjut : https://intip.in/PenjelasanAspekOOPLuna
+Link Penjelasan : https://intip.in/PenjelasanAspekOOPLuna
 
 # Demo Aplikasi Youtube:
 
